@@ -1,0 +1,28 @@
+{
+    "name": "nwby/pyramid",
+    "description": "Project stack package",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "NWBY",
+            "email": "sam.newby19@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "NWBY\\Pyramid\\": "src"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "NWBY\\Pyramid\\PyramidServiceProvider"
+            ]
+        }
+    },
+    "require-dev": {
+        "orchestra/testbench": "^4.6"
+    }
+}
