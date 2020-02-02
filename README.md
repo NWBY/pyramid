@@ -16,4 +16,7 @@ public function __construct() {
 }
 ```
 
+Publish migration:
+`php artisan vendor:publish --provider="NWBY\Pyramid\PyramidServiceProvider" --tag="migrations"`
+
 **TODO:** Add docs for creating a stack and retrieving stack(s).
