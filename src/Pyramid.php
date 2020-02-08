@@ -11,23 +11,6 @@ class Pyramid
     {
     }
 
-    public function create(array $data)
-    {
-        if (Schema::hasTable('stacks')) {
-            DB::table('stacks')->insert([
-                'name' => $data['name'],
-                'frontend' => $data['frontend'],
-                'frontend_url' => $data['frontend_url'],
-                'backend' => $data['backend'],
-                'backend_url' => $data['backend_url'],
-                'hosting' => $data['hosting'],
-                'version_control' => $data['version_control'],
-                'ui' => $data['ui'],
-            ]);
-        } else {
-        }
-    }
-
     public function getStack()
     {
         if (Schema::hasTable('stacks')) {
